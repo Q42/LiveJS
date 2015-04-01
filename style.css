@@ -1,0 +1,152 @@
+/* Go ahead, mess up the CSS :) ... */
+  
+body {
+  margin: 0;
+  background: #050511;
+  font: 20px/26px 'Helvetica', 'Arial';
+  text-align: center;
+}
+h1 {
+  font: 100px/100px 'Allan';
+  margin: 0;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+#the-big-green-button {
+  font: 30px 'Allan';
+  display: inline-block;
+  background: #119707;
+  padding: 30px 30px;
+  text-decoration: none;
+  color: #fff;
+  border: solid #0A4D05 8px;
+  border-radius: 60px;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+#the-big-green-button:hover {
+  background: #0A4D05;  
+}
+.version {
+  font: 10px/12px 'Arial';
+  display: block;
+  color: rgba(255,255,255,.8);
+}
+a {
+  color: #888;
+  text-decoration: underline;  
+}
+a img {
+ border: none;
+}
+.top {
+  padding: 20px 100px;
+  background: #fff;
+}
+.bottom {
+  padding: 20px 100px;  
+  color: #fff;
+  border-top: dashed #fff 1px;
+}
+.bottom a {
+  color: #3496FF;
+  text-decoration: none;
+}
+.bottom a:hover {
+  color: #fff;
+}
+p {
+  max-width: 780px;
+  margin: 0 auto;
+}
+#blurb {
+  font: 32px/50px 'Allan';
+  letter-spacing: 5px;
+  color: #777;
+  margin-bottom: 20px;
+}
+h2 {
+  font: 50px/60px 'Allan';
+  margin: 10px 0;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+#download {
+  display: block;
+  color: #888;
+  font-size: 14px;
+  margin: 50px auto 30px auto;
+}
+#bookmarklet {
+  margin-bottom: 20px;
+}
+#bookmarklet a {
+  color: #3496FF;
+  text-decoration: none;
+}
+.weak {
+  font: 12px/12px 'Arial';
+  display: block;
+  color: #888;
+  margin-top: 3px;
+}
+textarea {
+  display: block;
+  width: 100%; height: 250px;
+  font: 14px/18px 'Consolas', 'Courier';
+  border: dotted #050511 1px;
+  padding: 5px;
+  margin: 20px 0;
+}
+#try-it #the-big-green-button {
+  padding: 10px 20px;
+}
+iframe#background {
+  position: absolute; 
+  top: -2000px; left: -2000px;
+}
+#banner {
+  position: absolute;
+  right: 0; top: 0;
+  width: 200px; height: 150px;
+  overflow: hidden;
+}
+#demo {
+  display: block;
+  position: absolute;
+  width: 500px;
+  top: 80px; right: -250px;
+  background: #C22;    
+  padding: 2px 0;
+  /* use crossbrowser matrix transformation instead of rotate deg */
+  -webkit-transform: matrix(0.76604444, 0.64278761, -0.64278761, 0.76604444, 0, 0);
+  -moz-transform: matrix(0.76604444, 0.64278761, -0.64278761, 0.76604444, 0, 0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.76604444, M12=-0.64278761, M21=0.64278761, M22=0.76604444,sizingMethod='auto expand')";
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.76604444, M12=-0.64278761, M21=0.64278761, M22=0.76604444,sizingMethod='auto expand');
+  box-shadow: 0 4px 4px #999;  
+}
+.ie #demo {
+  margin: -150px -50px 0 0;
+}
+
+#demo a {
+  display: block;
+  font: 30px/40px 'Allan';
+  color: #fff;
+  border: dotted #E7ADAD 2px;
+  text-decoration: none;
+}
+#demo:hover {
+  background: #411;
+  top: -20px; right: -130px;
+}
+#q42 {
+  margin-top: 30px;  
+}  
+a, a:hover, #demo, #demo:hover {
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Live.js - One script closer to Designing in the Browser</title>
+    <meta name="description" content="One script closer to Design in the Browser">
+    <meta name="author" content="Martin Kool">
+    <meta name="author" content="Q42">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Allan:bold" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="/style.css"><script type="text/javascript" src="/head.min.js"></script><script type="text/javascript" src="/live.js"></script></head>
+  <body>
+    <div class="top">
+      <h1>Live.js</h1>
+      <p id="blurb">one script closer to designing in the browser</p>
+      <p>
+          Say goodbye to Alt-Tab. Live.js makes sure you're always looking at the latest version of the page you're working on,
+          whether you're writing HTML, CSS or Javascript.
+        </p>
+      <p id="download"><a id="the-big-green-button" href="/live.js" target="_blank">download live.js
+          <span class="version">version 4</span></a><br><a href="/license.txt">license</a></p>
+      <p id="bookmarklet">
+          Or use the bookmarklet! Drag the following link to your bookmarks bar:
+          <a title="Drag me to your bookmarks bar!" href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://livejs.com/live.js#css,notify';})();">Live.js</a><span class="weak">
+            (using Live.js as a bookmarklet will only monitor CSS changes)
+          </span></p>
+    </div>
+    <div id="banner">
+      <p id="demo"><a href="/demo" target="_blank">demo →        click here!</a></p>
+    </div>
+    <div class="bottom">
+      <h2>How?</h2>
+      <p>
+          Just include Live.js and it will monitor the current page including local CSS and Javascript by sending consecutive HEAD requests
+          to the server. Changes to CSS will be applied dynamically and HTML or Javascript changes will reload the page.
+          <a href="/demo" target="_blank">Try it!</a></p>
+      <h2>Where?</h2>
+      <p>
+          Live.js works in Firefox, Chrome, Safari, Opera and IE6+ until proven otherwise.
+          Live.js is independent of the development framework or language you use, whether it be Ruby, Handcraft, Python, Django, NET,
+          Java, Php, Drupal, Joomla or what-have-you.
+        </p>
+      <h2>Why?</h2>
+      <p>
+          Live.js was written by <a href="http://twitter.com/mrtnkl">Martin Kool</a> as the next step in <a href="http://www.handcraft.com">Handcraft</a>'s
+          design in the browser strategy. But similar to when we open sourced <a href="http://blog.handcraft.com/2010/08/backfire-save-css-changes-made-in-firebug/">Backfire</a>
+          (which allows you to save CSS changes made with Firebug) it seemed natural to once again share the code.
+        </p>
+      <h2>Twitter</h2>
+      <p>
+          Follow <a href="http://twitter.com/livejs">@livejs</a> or mention <a href="http://twitter.com/#!/search/%23livejs">#livejs</a>.
+        </p>
+      <p id="q42"><a href="http://q42.com" title="I work at Q42."><img src="/q42-logo.png?h=42"></a></p>
+    </div>
+  </body>
+</html>
