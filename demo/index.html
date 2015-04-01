@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Live.js - One script closer to Designing in the Browser</title>
+    <meta name="description" content="One script closer to Design in the Browser">
+    <meta name="author" content="Martin Kool">
+    <meta name="author" content="Q42">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Allan:bold" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="/style.css"><script type="text/javascript" src="/head.min.js"></script><script type="text/javascript" src="/live.js"></script><script type="text/javascript">
+        function loadCssInTextarea() {
+          var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XmlHttp");
+          xhr.open("GET", "/style.css", false);
+          xhr.send();
+          document.getElementById('css').value = xhr.responseText;
+        }
+      </script></head>
+  <body onload="loadCssInTextarea()" id="try-it">
+    <div class="top">
+      <h1>Try it!</h1>
+      <form method="post" target="background"><textarea id="css" name="css"></textarea><input id="the-big-green-button" type="submit" value="save"><br><a href="/demo/empty.html" target="background">clear</a> or <a href="/demo/reset.html" target="background">reset</a></form>
+      <iframe id="background" name="background"></iframe>
+    </div>
+    <div class="bottom">
+      <h2>Que?</h2>
+      <p>
+          For a demo of Live.js we allow you to temporarily change the style.css file. So,
+          have the <a href="/" target="_blank">homepage</a> and this one open and visible.
+          Mess up the CSS and look at the homepage.
+        </p>
+      <h2>But...</h2>
+      <p>
+          Your changes are saved to the <a href="/style.css" target="_blank">/style.css</a> file included on both pages.
+          Saving is not part of live.js ;-) But as Live.js is also loaded, it applies your changes without a reload.
+        </p>
+      <h2>Sombreros!</h2>
+      <p>
+          And that's not all. Live.js also applies changes to HTML or Javascript.
+          So include it in your own project right now and forget about Alt-Tab.
+        </p>
+      <h2>Bookmarklet</h2>
+      <p>
+          Or use the bookmarklet to only monitor CSS changes on any page you're working on! Drag the following link to your bookmarks bar:
+          <a title="Drag me to your bookmarks bar!" href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://livejs.com/live.js#css,notify';})();">Live.js</a></p>
+    </div>
+  </body>
+</html>
