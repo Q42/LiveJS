@@ -1,5 +1,5 @@
 {
-  "name": "live.js",
+  "name": "livejs",
   "version": "1.0.0",
   "description": "Live.js makes sure you're always looking at the latest version of the page you're working on, whether you're writing HTML, CSS or Javascript.",
   "main": "live.js",
