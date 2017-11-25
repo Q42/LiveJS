@@ -5,7 +5,7 @@
   "main": "live.js",
   "author": "Martin Kool",
   "bugs": {
-    "url": "https://github.com/Q42/LiveJS/issues",
+    "url": "https://github.com/Q42/LiveJS/issues"
   },
   "homepage": "http://livejs.com",
   "private": true
