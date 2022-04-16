@@ -202,6 +202,7 @@
       pendingRequests[url] = true;
       var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XmlHttp");
       xhr.open("HEAD", url, true);
+      xhr.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
       xhr.onreadystatechange = function () {
         delete pendingRequests[url];
         if (xhr.readyState == 4 && xhr.status != 304) {
